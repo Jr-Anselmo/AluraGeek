@@ -1,0 +1,27 @@
+@import url(cabecalho.css);
+@import url(banner.css);
+@import url(rodape.css);
+@import url(produtos.css);
+@import url(login.css);
+@import url(adicionar.css);
+@import url(produtoExtra.css);
+
+:root {
+    --cinza: #F5F5F5;
+    --cinza-escuro: #A2A2A2;
+    --azul: #2A7AE4;
+    --azul-claro: #EAF2FD;
+    --branco: #FFFFFF;
+    --preto: #464646;
+
+    --fonte-principal: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+main {
+    background-color: var(--cinza);
+}

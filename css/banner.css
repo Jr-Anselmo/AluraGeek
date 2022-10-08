@@ -1,0 +1,25 @@
+.banner__imagem {
+    display: none;
+}
+
+.banner__imagem--mobile {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner__imagem {
+        display: block;
+        width: 100vw;
+    }
+
+    .banner__imagem--mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,66 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.cabecalho__pesquisa {
+    display: none;
+}
+
+.cabecalho__login {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: .9rem;
+    padding: .7rem 4rem;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    text-decoration: none;
+}
+
+/* css pagina produtos */
+
+.cabecalho__login--produto {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: .9rem;
+    padding: .7rem 2rem;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__pesquisa--mobile-imagem {
+        display: none;
+    }
+
+    .cabecalho__pesquisa {
+        display: block;
+        width: 35%;
+        border-radius: 20px;
+        padding: .5rem 1rem;
+        margin-left: -5rem;
+        background-color: var(--cinza);
+        border: none;
+    }
+
+    .cabecalho__pesquisa::placeholder {
+        background-image: url(../img/icones/pesquisa.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        color: var(--cinza-escuro);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .cabecalho__imagem {
+        width: 10rem;
+    }
+}

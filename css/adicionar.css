@@ -1,0 +1,133 @@
+.categoria__produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.categoria__titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.url__imagem {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1rem 0 0 1rem;
+}
+
+.url__imagem::placeholder {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-size: .7rem;
+    color: var(--cinza-escuro);
+}
+
+.categoria {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1rem 0 0 1rem;
+}
+
+.categoria::placeholder {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-size: .7rem;
+    color: var(--cinza-escuro);
+}
+
+.nome__produto {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1rem 0 0 1rem;
+}
+
+.nome__produto::placeholder {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-size: .7rem;
+    color: var(--cinza-escuro);
+}
+
+.preco__produto {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1rem 0 0 1rem;
+}
+
+.preco__produto::placeholder {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-size: .7rem;
+    color: var(--cinza-escuro);
+}
+
+.descricao {
+    width: 85%;
+    height: 6rem;
+    border: none;
+    border-bottom: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+}
+
+.descricao::placeholder {
+    color: var(--cinza-escuro);
+    font-size: 1rem;
+    font-family: var(--fonte-principal);
+}
+
+.categoria__botao {
+    width: 90%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem 0;
+    background-color: var(--azul);
+    color: var(--branco);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .categoria__titulo {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .url__imagem, .categoria, .nome__produto, .preco__produto, .categoria__botao {
+        width: 30rem;
+        height: 4rem;
+    }
+
+    .descricao {
+        width: 30rem;
+        height: 8rem;
+    }
+
+    .categoria__titulo {
+        font-size: 1.8rem;
+    }
+}

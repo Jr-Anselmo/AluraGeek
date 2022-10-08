@@ -1,0 +1,110 @@
+.produtos__lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.3rem .5rem 1rem;
+}
+
+.produtos__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;  
+}
+
+.produtos__link--seta {
+    color: var(--azul);
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+/*.produtos__link--seta::after {
+    content: url("/img/icones/seta.svg");
+    position: absolute;
+    top: auto;
+}*/
+
+.produtos__lista--item, .produto__logado--item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem 1rem;
+    margin: 0 auto;
+}
+
+.produtos__item {
+    margin-right: .3rem;
+}
+
+.produto__imagem {
+    width: 10rem ;
+    margin-top: .5rem;
+    margin-right: .3rem;
+    border-radius: 5px;
+}
+
+.produtos__texto {
+    font-weight: 500;
+    font-size: .9rem;
+    margin: .3rem 0;
+}
+
+.produtos__preco {
+    font-weight: 700;
+    margin: .3rem 0;
+}
+
+.produtos__link {
+    color: var(--azul);
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.produtos__link--seta, .produtos__link {
+    text-decoration: none;
+}
+
+.produto__imagem-desktop {
+    display: none;
+}
+
+.produtos__link--adicionar {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: .9rem;
+    padding: 1rem 2rem;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .container__principal {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .produto__logado--item {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .produto__imagem {
+        width: 9rem;
+    }
+
+    .container__principal {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .produto__imagem-desktop {
+        display: block;
+    }
+    .produto__logado--item{
+        justify-content: space-around;
+    }
+}

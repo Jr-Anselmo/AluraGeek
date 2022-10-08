@@ -1,0 +1,75 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2rem;
+}
+
+.login__titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.login__email {
+    width: 20rem;
+    height: 2.5rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-bottom: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.login__email::placeholder {
+    color: var(--cinza-escuro);
+    font-size: 1.1rem;
+}
+
+.login__senha {
+    width: 20rem;
+    height: 2.5rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-bottom: 1px solid var(--cinza-escuro);
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.login__senha::placeholder {
+    color: var(--cinza-escuro);
+    font-size: 1.1rem;
+}
+
+.login__botao {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1.5rem 4rem;
+    background-color: var(--azul);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .login__email {
+        width: 25rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .login__senha {
+        width: 25rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .login__botao {
+        width: 19rem;
+        height: 2rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
